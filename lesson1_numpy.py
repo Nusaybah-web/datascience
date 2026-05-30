@@ -46,7 +46,7 @@ print(arr3[-2,-1,-2])
 
 #slicing 2-D arrays
 
-arr2=np.array([[29,39,12],[32,24,52]])
+arr2=np.array([[29,39,12],[32,24,52]],dtype="f")
 
 print(arr2[0,1:])
 print(arr2[:1,:1])
@@ -57,3 +57,19 @@ ar=np.array(["hello","good","morning"])
 print(ar.dtype)
 
 print(array.dtype)
+
+#shape
+print(arr2.shape)
+print(arr2.size)
+
+#getting an array of numbers from one to 100
+num=np.arange(0,100,2)
+print(num)
+
+#get a random arrangement of numbers
+rand=np.random.permutation(np.arange(1,100))
+print(rand)
+
+#get a random number using numpy
+randnum=np.random.randint(1,1000)
+print(randnum)
